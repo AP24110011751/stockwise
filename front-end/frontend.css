@@ -444,17 +444,16 @@ th {
 
 
 #reviews {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
-.customer-name
-{
+.customer-name {
     font-weight: bold;
     display: flex;
     justify-content: center;
 }
-.customer-review
-{
+
+.customer-review {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -469,18 +468,15 @@ th {
     margin-bottom: 24px;
 }
 
-.rating
-{
+.rating {
     display: flex;
     justify-content: center;
 }
 
-.review{
+.review {
     margin-top: 20px;
 }
 
-.golden
-{
+.golden {
     color: #ffc100
 }
-
