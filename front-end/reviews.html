@@ -96,8 +96,10 @@
 
 
 
+        const apiURL = window.location.port === '3000' || window.location.port === '5500' ? 'http://localhost:8080' : '';
+
         function getReviews(storeId, productId) {
-            url = `http://localhost:8080/reviews/${storeId}/${productId}`;
+            url = `${apiURL}/reviews/${storeId}/${productId}`;
             fetch(url, {
                 method: "GET",
                 headers: { "content-type": "application/json" }

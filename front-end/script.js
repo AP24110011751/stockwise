@@ -1,4 +1,4 @@
-const apiURL = 'http://localhost:8080';
+const apiURL = window.location.port === '3000' || window.location.port === '5500' ? 'http://localhost:8080' : '';
 let students = [];
 let Ordercount = 1;
 let deleteRow = [];
