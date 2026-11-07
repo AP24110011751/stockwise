@@ -55,6 +55,21 @@ input[type="button"] {
     height: 80px;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.brand-name {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
 
 #navitem {
     display: flex;
