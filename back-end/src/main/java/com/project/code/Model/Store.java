@@ -21,7 +21,7 @@ public class Store {
     @NotBlank(message = "Address cannot be blank")
     private String address;
 
-    @OneToMany(mappedBy = "store")
+    @OneToMany(mappedBy = "store", fetch = FetchType.EAGER)
     @JsonManagedReference("inventory-store")
     private List<Inventory> inventory = new ArrayList<>();
 

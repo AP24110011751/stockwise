@@ -2,6 +2,7 @@
 package com.project.code.Model;
 
 import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -16,12 +17,12 @@ public class OrderDetails {
 
     @ManyToOne
     @JoinColumn(name = "customer_id")
-    @JsonManagedReference("customer-orders")
+    @JsonBackReference("customer-orders")
     private Customer customer;
 
     @ManyToOne
     @JoinColumn(name = "store_id")
-    @JsonManagedReference("store-orders")
+    @JsonBackReference("store-orders")
     private Store store;
 
     private Double totalPrice;

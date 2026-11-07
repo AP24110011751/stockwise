@@ -56,9 +56,7 @@ public class ProductController {
 
         productRepository.findById(id).ifPresentOrElse(
                 product -> response.put("products", product),
-                () -> response.put("message", "Product not found")
-        );
-
+                () -> response.put("message", "Product not found"));
         return response;
     }
 

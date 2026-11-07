@@ -22,7 +22,7 @@ public class Customer {
   private String phone;
   
   @OneToMany(mappedBy="customer",fetch=FetchType.EAGER)
-  @JsonManagedReference
+  @JsonManagedReference("customer-orders")
   private List<OrderDetails> orders;
   
   public Customer(){}
